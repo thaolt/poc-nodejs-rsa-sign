@@ -64,8 +64,3 @@ console.log('signature =', signature.toString('hex'));
 verify.update(hash);
 
 console.log('verify =', verify.verify(publicKey, signature));
-
-// Prints: the calculated signature using the specified private key and
-// SHA-256. For RSA keys, the algorithm is RSASSA-PKCS1-v1_5 (see padding
-// parameter below for RSASSA-PSS). For EC keys, the algorithm is ECDSA.
-
