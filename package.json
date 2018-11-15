@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "thaolt <thaolt@songphi.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "elliptic": "^6.4.1"
+  }
 }

@@ -3,13 +3,13 @@ const sign = crypto.createSign('SHA256');
 const verify = crypto.createVerify('SHA256');
 const sha256 = crypto.createHash('SHA256');
 
-const data = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
-Fusce nisl magna, dictum ac lorem et, pellentesque vehicula magna. \
-Quisque gravida massa velit, eu tristique mi placerat ac. Suspendisse \
-ut massa at urna vestibulum vulputate. Vivamus orci lectus, aliquet \
-a vehicula vel, sodales at tellus. Nullam dignissim sem quis lacus \
-tempor ornare. Nullam id vehicula ipsum, nec rhoncus diam. Sed porttitor \
-justo at justo placerat, nec laoreet neque iaculis.';
+const data = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Fusce nisl magna, dictum ac lorem et, pellentesque vehicula magna. 
+Quisque gravida massa velit, eu tristique mi placerat ac. Suspendisse 
+ut massa at urna vestibulum vulputate. Vivamus orci lectus, aliquet 
+a vehicula vel, sodales at tellus. Nullam dignissim sem quis lacus 
+tempor ornare. Nullam id vehicula ipsum, nec rhoncus diam. Sed porttitor 
+justo at justo placerat, nec laoreet neque iaculis.`;
 
 const hash = sha256.update(data, 'utf8').digest('hex');
 
