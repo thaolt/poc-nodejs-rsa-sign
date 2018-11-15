@@ -1,4 +1,16 @@
-## Excute
+## Generate keypair
+
+```
+ssh-keygen -y -f ./random_key
+```
+
+**Print public key in PEM format**
+
+```
+ssh-keygen -f ./random_key.pub -e -m pem
+```
+
+## Execute the script
 
 ```
 node index.js
